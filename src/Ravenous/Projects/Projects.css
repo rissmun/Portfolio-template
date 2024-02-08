@@ -1,0 +1,119 @@
+.view {
+  width: 280px;
+  height: 280px;
+  border-radius: 15px;
+  border: 4px solid;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  background: hsl(0, 0%, 100%);
+  margin: 40px 10px;
+}
+.view .mask,
+.view .content {
+  width: 278px;
+  height: 280px;
+  position: absolute;
+  background-color: hsla(186, 90%, 90%, 0.9);
+  top: 0;
+  left: 0;
+  border-radius: 1px;
+}
+
+.view h2 {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 30px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  margin: 50px 0 0 0;
+}
+.view p {
+  line-height: 110%;
+  letter-spacing: 0, 03em;
+  font-size: 17px;
+  position: relative;
+  color: black;
+  padding: 10px 30px 0px 20px;
+  text-align: center;
+  height: 75px;
+}
+.view a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  background: #000;
+  color: #fff;
+  box-shadow: 0 1px 1px #000;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.view a.info:hover {
+  transition: 0.1s;
+  box-shadow: 0 0 5px #000;
+}
+.view-first img {
+  height: 260px;
+  width: 260px;
+}
+.view-first img {
+  transition: all 0.2s linear;
+}
+.view-first .mask {
+  opacity: 0;
+
+  transition: all 0.4s ease-in-out;
+}
+.view-first h2 {
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.view-first p {
+  transform: translateY(100px);
+
+  opacity: 0;
+  margin-top: 10px;
+
+  transition: all 0.2s linear;
+}
+.view-first a.info {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.view-first:hover img {
+  transform: scale(1.2);
+}
+.view-first:hover .mask {
+  opacity: 1;
+}
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+@media (max-width: 700px) {
+  .view h2 {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 30px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0;
+  }
+
+  .view p {
+    font-size: 19px;
+    position: relative;
+    color: black;
+    padding: 10px 30px 0px 20px;
+    text-align: center;
+    height: 100px;
+  }
+}
