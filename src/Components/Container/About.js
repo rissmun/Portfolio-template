@@ -37,7 +37,7 @@ export function About() {
       >
         <h3 style={{ marginBottom: "1rem" }}>About Me</h3>
         <p style={{ margin: 0, color: "" }}>
-          I'm Italian, and seven years ago, I moved to the beautiful Sweden with
+          I'm Russian, and seven years ago, I moved to the beautiful Sweden with
           my girlfriend. Now, we have two wonderful kids.
           <br />
           <br />
